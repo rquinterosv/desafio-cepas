@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @categorywine.category %>
+</p>
+
+<p>
+  <strong>Wine:</strong>
+  <%= @categorywine.wine %>
+</p>
+
+<%= link_to 'Edit', edit_categorywine_path(@categorywine) %> |
+<%= link_to 'Back', categorywines_path %>
