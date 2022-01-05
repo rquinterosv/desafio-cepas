@@ -22,7 +22,6 @@ class CategorywinesController < ApplicationController
   # POST /categorywines or /categorywines.json
   def create
     @categorywine = Categorywine.new(categorywine_params)
-
     respond_to do |format|
       if @categorywine.save
         format.html { redirect_to categorywine_url(@categorywine), notice: "Categorywine was successfully created." }
