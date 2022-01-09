@@ -14,8 +14,8 @@
   <tbody>
     <% @categorywines.each do |categorywine| %>
       <tr>
-        <td><%= categorywine.category %></td>
-        <td><%= categorywine.wine %></td>
+        <td><%= categorywine.wine.name %></td>
+        <td><%= categorywine.category.name %></td>
         <td><%= link_to 'Show', categorywine %></td>
         <td><%= link_to 'Edit', edit_categorywine_path(categorywine) %></td>
         <td><%= link_to 'Destroy', categorywine, method: :delete, data: { confirm: 'Are you sure?' } %></td>

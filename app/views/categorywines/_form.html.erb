@@ -11,14 +11,7 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :wines %>
-    <%= form.collection_check_boxes(:wine_id, Wine.all, :id, :name) do |b|%>
-      <%= b.label class: 'label-checkbox' do%>
-      <%= b.check_box + b.text%>
-    <%end%>
-  <%end%>
-  </div>
+
 
   <div class="field">
     <%= form.label :categories %>
